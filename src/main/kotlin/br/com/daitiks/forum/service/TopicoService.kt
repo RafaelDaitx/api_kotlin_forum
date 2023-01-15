@@ -35,7 +35,6 @@ class TopicoService(
         } else{
             repository.findByCursoNome(nomeCurso, paginacao)
         }
-
         return topicos.map {
             t -> topicoViewMapper.map(t)
         }
